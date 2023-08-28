@@ -24,4 +24,5 @@ int aNumber = Convert.ToInt32(Console.ReadLine());
 // Console.WriteLine("Введите число B");
 // int bNumber = Convert.ToInt32(Console.ReadLine());
 
-int result = SumNumbers(aNumber);
+int result = SumNumbers(aNumber); //лучше делать переменную на этом этапе
+Console.WriteLine(result);
