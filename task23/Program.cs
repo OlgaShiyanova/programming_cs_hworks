@@ -9,7 +9,7 @@ void CubeTable(int number)
   int counter = 1;
   while (counter <= number)
   {
-    Console.WriteLine($"{counter} в кубе = {counter * counter * counter}"); // $ -формируем строку
+    Console.WriteLine($"{counter, 3} в кубе = {counter * counter * counter, 5}"); // $ -формируем строку
     counter++;// увеличели счетчик на 1
   }
 }
