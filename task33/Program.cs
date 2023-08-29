@@ -1,4 +1,10 @@
-﻿int[] CreateArrayRndInt(int size, int min, int max)
+﻿//задача33: Задайте массив. Напишите программу,
+// которая определяет, присутсвует ли заданное число 
+// в массиве.
+// 4: массив [6,7 19, 345, 3] -> нет
+// 3: массив [6,7 19, 345, 3] -> да
+
+int[] CreateArrayRndInt(int size, int min, int max)
 {
     int[] arr = new int[size];
     Random rnd = new Random();
@@ -20,15 +26,20 @@ void PrintArray(int[] arr)
     Console.WriteLine("]");
 }
 
-int[] ChangeNum(int[] arr)
+bool FindNum(int[] arr, int num)
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] *= -1;
+        if(arr[i] == num) return true; // с нулевого сравниваем, вовзащаем правду, иначе возвращаем ложь
     }
-    return arr;
+    return false;
 }
 
 int[] array = CreateArrayRndInt(4, -9, 9);
 PrintArray(array);
-PrintArray(ChangeNum(array));
+
+Console.WriteLine("Введите искомое число:");
+int number = Convert.ToInt32(Console.ReadLine());
+
+bool findNum = FindNum(array, number);
+Console.WriteLine(findNum ? "Число присутствует" : "Число отсутствует");
