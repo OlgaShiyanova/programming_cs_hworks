@@ -5,11 +5,12 @@
 // (82 -> 2) 82 -> 10   
 // (9012 -> 4) 9012 -> 12
 
-int Quantity(int num);
+int Quantity(int num)
 {
-    if (num < 0) then num = num * -1;
-    int count = 0;
-    while (num => 0)
+    if (num < 0) 
+        num = num * -1;
+        int count = 0;
+    while (num > 0)
     {
         num = num / 10;
         count++;
@@ -17,8 +18,10 @@ int Quantity(int num);
     return count;
 }
 
+
+
 Console.WriteLine("Ваше натуральное число");
 int number = Convert.ToInt32(Console.ReadLine());
 
 int quantity = Quantity(number);
-Console.WriteLine($"в вашем числе" {quantity} "знаков");
+Console.WriteLine($"в вашем числе {quantity} знаков");
