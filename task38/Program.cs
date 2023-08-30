@@ -8,13 +8,13 @@
 // ([1 2 3 4 5] -> 5 8 3)
 // ([10, 11, 12, 13, 14] -> 5)
 
-double[] CreateArrayRndDouble(int size)
+double[] CreateArrayRndDouble(int size, int min, int max)
 {
     double[] arr = new double[size];
     Random rnd = new Random();
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = rnd.NextDouble();
+        arr[i] = rnd.NextDouble() * (max - min) + min; //числа из диапазона
     }
     return arr;
 }
@@ -24,8 +24,8 @@ void PrintArray(double[] arr)
     Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
     {
-        if(i < arr.Length - 1) Console.Write($"{arr[i]},");
-        else Console.Write($"{arr[i]}; ");
+        if(i < arr.Length - 1) Console.Write($"{arr[i]:F1}; ");
+        else Console.Write($"{arr[i]:F1}"); //округление до 1 знака
     }
     Console.WriteLine("]");
 }
@@ -42,7 +42,7 @@ void PrintArray(double[] arr)
 //    return newArr;
 //}
 
-double[] array = CreateArrayRndDouble(5); 
+double[] array = CreateArrayRndDouble(5, 0, 100); 
 PrintArray(array);
 // int[] pairMultiplication = PairMultiplication(array);
 // PrintArray(pairMultiplication);
