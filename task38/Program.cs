@@ -42,7 +42,22 @@ void PrintArray(double[] arr)
 //    return newArr;
 //}
 
+double MaxArray(double[] arr, int size)
+{
+    double max = arr[0];
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i] > max)
+        {
+            max = arr[i];
+        }
+    }
+    return max;
+}
+
 double[] array = CreateArrayRndDouble(5, 0, 100); 
 PrintArray(array);
+double maxarr = MaxArray(array, 5);
+Console.WriteLine($"{maxarr:F1}");
 // int[] pairMultiplication = PairMultiplication(array);
 // PrintArray(pairMultiplication);
