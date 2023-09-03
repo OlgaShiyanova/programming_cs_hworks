@@ -8,6 +8,8 @@
 // ([1 2 3 4 5] -> 5 8 3)
 // ([10, 11, 12, 13, 14] -> 5)
 
+using System.Reflection;
+
 double[] CreateArrayRndDouble(int size, int min, int max)
 {
     double[] arr = new double[size];
@@ -55,9 +57,27 @@ double MaxArray(double[] arr, int size)
     return max;
 }
 
+double MinArray(double[] arr, int size)
+{
+    double min = arr[0];
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i] < min)
+        {
+            min = arr[i];
+        }
+    }
+    return min;
+}
+
+
 double[] array = CreateArrayRndDouble(5, 0, 100); 
 PrintArray(array);
 double maxarr = MaxArray(array, 5);
 Console.WriteLine($"{maxarr:F1}");
+double minarr = MinArray(array, 5);
+Console.WriteLine($"{minarr:F1}");
+double diffMaxMinArr = maxarr - minarr;
+Console.WriteLine($"{diffMaxMinArr:F1}");
 // int[] pairMultiplication = PairMultiplication(array);
 // PrintArray(pairMultiplication);
