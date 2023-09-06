@@ -24,21 +24,20 @@ double k1Var = Promt("Введите k1 -> ");
 double b2Var = Promt("Введите b2 -> ");
 double k2Var = Promt("Введите k2 -> ");
 
-double CoordY1(double b1Coord, double k1Coord, double b2Coord, double k2Coord)
+double CoordX(double b1Coord, double k1Coord, double b2Coord, double k2Coord)
 {
         double xCoord = (b2Coord - b1Coord) / (k1Coord - k2Coord);
-        double point1 = k1Coord * xCoord + b1Coord; 
+        double point1 = xCoord; 
 
         return point1;
 }
-double CoordY2(double b1Coord, double k1Coord, double b2Coord, double k2Coord)
+double CoordY(double b1Coord, double k1Coord, double xCoord)
 {
-        double xCoord = (b2Coord - b1Coord) / (k1Coord - k2Coord);
-        double point2 = k2Coord * xCoord + b2Coord; 
+        double point2 = k1Coord * xCoord + b1Coord; 
 
         return point2;
 }
-double point1 = CoordY1(b1Var, k1Var, b2Var, k2Var);
-double point2 = CoordY2(b1Var, k1Var, b2Var, k2Var);
+double point1 = CoordX(b1Var, k1Var, b2Var, k2Var);
+double point2 = CoordY(b1Var, k1Var, point1);
 Console.WriteLine();
-Console.WriteLine($"b1 = {b1Var}, k1 = {k1Var}, b2 = {b2Var}, k2 = {k2Var} -> ({point1};{point1})");
+Console.WriteLine($"b1 = {b1Var}, k1 = {k1Var}, b2 = {b2Var}, k2 = {k2Var} -> ({point1};{point2})");
