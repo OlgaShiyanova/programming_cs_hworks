@@ -38,29 +38,24 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-void FindNumber(int[,] matrix, int number)
+void FindNumber(int[,] matrix, int a, int b)
 {
-    int exists = 0;
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            if (matrix[i,j] == number)
+    if (a > matrix.GetLength(0) || b > matrix.GetLength(1))
             {
-                exists = exists + 1;
+                Console.WriteLine($"такого числа нет");
             }
+    else 
+      {
+        int c = matrix[a-1,b-1];//object c = matrix.GetValue(a-1,b-1);
+        Console.WriteLine(c);
         }
-    }
-    if (exists > 0)
-            {
-                Console.WriteLine($"{number} - присутсвует");
-            }
-            else Console.WriteLine($"числа {number} нет");
 }
 
 
 int[,] array2d = CreateMatrixRndInt(3, 4, -99, 99);
 PrintMatrix(array2d);
-Console.WriteLine("Введите число для проверки");
-int findNumber = Convert.ToInt32(Console.ReadLine());
-FindNumber(array2d, findNumber);
+Console.WriteLine("Введите строку");
+int rowsNumber = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите столбец");
+int columnsNumber = Convert.ToInt32(Console.ReadLine());
+FindNumber(array2d, rowsNumber, columnsNumber);
