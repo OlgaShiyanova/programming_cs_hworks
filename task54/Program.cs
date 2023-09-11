@@ -39,20 +39,31 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-void ReplacementSeats(int[,] matrix)
+void SortingRowsInMatrix(int[,] matrix)
 {
-    int firstRow = 0;
-    int lastRow = matrix.GetLength(0) - 1;
-    for (int j = 0; j < matrix.GetLength(1); j++)
+//    int firstRow = 0;
+//    int lastRow = matrix.GetLength(0) - 1;
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        int temp = matrix[firstRow, j];
-        matrix[firstRow, j] = matrix[lastRow, j];
-        matrix[lastRow, j] = temp;
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            for (int k =  0; k < matrix.GetLength(1)-1; k++)
+            {
+                if (matrix[i,k] < matrix[i,k+1])
+                {
+                    int temp = matrix[i, k+1];
+                    matrix[i, k+1] = matrix[i, k];
+                    matrix[i, k] = temp;
+                } 
+            }
+        }
     }
+    Console.WriteLine();
+    PrintMatrix(matrix);
 }
 
-int[,] array2d = CreateMatrixRndInt(3, 4, -99, 99);
+int[,] array2d = CreateMatrixRndInt(3, 4, -9, 9);
 PrintMatrix(array2d);
 Console.WriteLine();
-ReplacementSeats(array2d);
-PrintMatrix(array2d);
+SortingRowsInMatrix(array2d);
+// PrintMatrix(array2d);
