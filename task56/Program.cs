@@ -40,31 +40,31 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-int[] SumRowElements(int[,] matrix)
 
-
-int MinIndexesRows(int[,] matrix)
+int SumRowElements(int[,] matrix, int iRow)
 {
-    int minRowIndex = 0;
-    int minRowSum = int.MaxValue;
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        int rowSum = 0;
-        for (int j = 0; j < matrix.GetLength(1); j++)
+    int sumElements = matrix[iRow,0];
+    for (int j = 1; j < matrix.GetLength(1); j++)
         {
-            rowSum += matrix[i, j];
-        }
-        if (rowSum < minRowSum)
-        {
-            minRowSum = rowSum;
-            minRowIndex = i;
-        }
-    }
-    return minRowIndex;
-
+            sumElements += matrix[iRow, j];    
+        }    
+    return sumElements;
 }
 
-int[,] array2d = CreateMatrixRndInt(4, 3, -9, 9);
+
+int[,] array2d = CreateMatrixRndInt(4, 3, -9, 5);
 PrintMatrix(array2d);
-int minIndexesRows = MinIndexesRows(array2d);
-System.Console.WriteLine($"Индекс строки с наименьшей суммой элементов: {minIndexesRows}");
+int minSumRow = 0;
+int sumRowElements = SumRowElements(array2d, 0);
+for (int i = 1; i < array2d.GetLength(0); i++)
+{
+  int tempSumRow = SumRowElements(array2d, i);
+  if (sumRowElements > tempSumRow)
+  {
+    sumRowElements = tempSumRow;
+    minSumRow = i;
+  }
+}
+Console.WriteLine($"\n{minSumRow+1} - строкa с наименьшей суммой элементов ");
+// Console.Write("Сумма элементов по строкам: ");
+
