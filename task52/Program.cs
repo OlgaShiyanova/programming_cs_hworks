@@ -36,18 +36,22 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-double AverageColumnsElements(int[,] matrix)
+void FindingAverageElementsMatrix(int[,] matrix)
 {
-    int sum = 0;
-    int size = matrix.GetLength(0) < matrix.GetLength(1) ? matrix.GetLength(0) : matrix.GetLength(1);
-        for (int i = 0; i < size; i++)
+    for (int j = 0; j < matrix.GetLength(1); j++)
     {
-        sum += matrix[i,i];
+        double avarage = 0;
+        for (int i = 0; i < matrix.GetLength(0); i++)
+        {
+            avarage += matrix[i, j];
+        }
+        avarage /= matrix.GetLength(0);
+        Console.Write($"{avarage:F1}" + ": ");
     }
-    return sum;
+
 }
 
 int[,] array2d = CreateMatrixRndInt(3, 4, -99, 99);
 PrintMatrix(array2d);
-int sumElementsMainDiagonal = SumElementsMainDiagonal(array2d);
-Console.WriteLine($"Сумма элементов = {sumElementsMainDiagonal}");
+//int sumElementsMainDiagonal = SumElementsMainDiagonal(array2d);
+FindingAverageElementsMatrix(array2d);
