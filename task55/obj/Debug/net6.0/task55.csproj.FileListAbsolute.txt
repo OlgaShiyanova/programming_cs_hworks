@@ -1,0 +1,15 @@
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task55\bin\Debug\net6.0\task55.exe
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task55\bin\Debug\net6.0\task55.deps.json
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task55\bin\Debug\net6.0\task55.runtimeconfig.json
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task55\bin\Debug\net6.0\task55.dll
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task55\bin\Debug\net6.0\task55.pdb
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task55\obj\Debug\net6.0\task55.csproj.AssemblyReference.cache
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task55\obj\Debug\net6.0\task55.GeneratedMSBuildEditorConfig.editorconfig
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task55\obj\Debug\net6.0\task55.AssemblyInfoInputs.cache
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task55\obj\Debug\net6.0\task55.AssemblyInfo.cs
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task55\obj\Debug\net6.0\task55.csproj.CoreCompileInputs.cache
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task55\obj\Debug\net6.0\task55.dll
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task55\obj\Debug\net6.0\refint\task55.dll
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task55\obj\Debug\net6.0\task55.pdb
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task55\obj\Debug\net6.0\task55.genruntimeconfig.cache
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task55\obj\Debug\net6.0\ref\task55.dll

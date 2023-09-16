@@ -1,0 +1,15 @@
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task35_36\obj\Debug\net6.0\task35_36.csproj.AssemblyReference.cache
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task35_36\obj\Debug\net6.0\task35_36.GeneratedMSBuildEditorConfig.editorconfig
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task35_36\obj\Debug\net6.0\task35_36.AssemblyInfoInputs.cache
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task35_36\obj\Debug\net6.0\task35_36.AssemblyInfo.cs
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task35_36\obj\Debug\net6.0\task35_36.csproj.CoreCompileInputs.cache
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task35_36\bin\Debug\net6.0\task35_36.exe
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task35_36\bin\Debug\net6.0\task35_36.deps.json
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task35_36\bin\Debug\net6.0\task35_36.runtimeconfig.json
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task35_36\bin\Debug\net6.0\task35_36.dll
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task35_36\bin\Debug\net6.0\task35_36.pdb
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task35_36\obj\Debug\net6.0\task35_36.dll
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task35_36\obj\Debug\net6.0\refint\task35_36.dll
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task35_36\obj\Debug\net6.0\task35_36.pdb
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task35_36\obj\Debug\net6.0\task35_36.genruntimeconfig.cache
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task35_36\obj\Debug\net6.0\ref\task35_36.dll

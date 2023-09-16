@@ -1,0 +1,15 @@
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task45\bin\Debug\net6.0\task45.exe
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task45\bin\Debug\net6.0\task45.deps.json
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task45\bin\Debug\net6.0\task45.runtimeconfig.json
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task45\bin\Debug\net6.0\task45.dll
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task45\bin\Debug\net6.0\task45.pdb
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task45\obj\Debug\net6.0\task45.csproj.AssemblyReference.cache
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task45\obj\Debug\net6.0\task45.GeneratedMSBuildEditorConfig.editorconfig
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task45\obj\Debug\net6.0\task45.AssemblyInfoInputs.cache
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task45\obj\Debug\net6.0\task45.AssemblyInfo.cs
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task45\obj\Debug\net6.0\task45.csproj.CoreCompileInputs.cache
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task45\obj\Debug\net6.0\task45.dll
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task45\obj\Debug\net6.0\refint\task45.dll
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task45\obj\Debug\net6.0\task45.pdb
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task45\obj\Debug\net6.0\task45.genruntimeconfig.cache
+C:\GeekBrains\helloprogramming\seminar03\HomeWork3\task45\obj\Debug\net6.0\ref\task45.dll

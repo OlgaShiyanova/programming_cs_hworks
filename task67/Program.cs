@@ -1,2 +1,19 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Задача 67: Принимает на вход число
+// числа А и В. Возвращает сумму его цифр.
+// 453 -> 12
+// 45 -> 9
+
+int SumDigitNumber(int n) // 453 - 45 - 4 - 0
+{
+    if (n == 0) return 0;
+    return n % 10 + SumDigitNumber(n / 10);
+// стек:  453, 45, 4
+// когда 0 начинает считать из стека
+// 4%10 + 45%10 + 453%10 = 12 + 0
+}
+
+Console.WriteLine("введите число");
+int number = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine(SumDigitNumber(number));
+
