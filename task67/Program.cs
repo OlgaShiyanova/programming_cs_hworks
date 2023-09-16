@@ -1,19 +1,32 @@
-﻿// Задача 67: Принимает на вход число
-// числа А и В. Возвращает сумму его цифр.
-// 453 -> 12
-// 45 -> 9
+﻿Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
+ M = 1; N = 15 -> 120
+ M = 4; N = 8. -> 30
+ */
+ 
+Console.Write("Введите число M: ");
+int m = Convert.ToInt32(Console.ReadLine());
 
-int SumDigitNumber(int n) // 453 - 45 - 4 - 0
+Console.Write("Введите число N: ");
+int n = Convert.ToInt32(Console.ReadLine());
+
+SumFromMToN(m, n);
+
+// вызов функции "сумма чисел от M до N"
+void SumFromMToN(int m, int n)
 {
-    if (n == 0) return 0;
-    return n % 10 + SumDigitNumber(n / 10);
-// стек:  453, 45, 4
-// когда 0 начинает считать из стека
-// 4%10 + 45%10 + 453%10 = 12 + 0
+    Console.Write(SumMN(m - 1, n));
 }
 
-Console.WriteLine("введите число");
-int number = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine(SumDigitNumber(number));
-
+// функция сумма чисел от M до N
+int SumMN(int m, int n)
+{
+    int res = m;
+    if (m == n)
+        return 0;
+    else
+    {
+        m++;
+        res = m + SumMN(m, n);
+        return res;
+    }
+}
